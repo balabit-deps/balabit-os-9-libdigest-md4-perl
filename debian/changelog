@@ -1,0 +1,159 @@
+libdigest-md4-perl (1.9+dfsg-2build4) jammy; urgency=medium
+
+  * No-change rebuild for the perl update.
+
+ -- Matthias Klose <doko@ubuntu.com>  Sun, 06 Feb 2022 13:43:11 +0100
+
+libdigest-md4-perl (1.9+dfsg-2build3) hirsute; urgency=medium
+
+  * No-change rebuild for the perl update.
+
+ -- Matthias Klose <doko@ubuntu.com>  Mon, 09 Nov 2020 12:42:53 +0100
+
+libdigest-md4-perl (1.9+dfsg-2build2) focal; urgency=medium
+
+  * No-change rebuild for the perl update.
+
+ -- Matthias Klose <doko@ubuntu.com>  Fri, 18 Oct 2019 19:30:57 +0000
+
+libdigest-md4-perl (1.9+dfsg-2build1) disco; urgency=medium
+
+  * No-change rebuild for the perl 5.28 transition.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Fri, 02 Nov 2018 18:10:31 -0600
+
+libdigest-md4-perl (1.9+dfsg-2) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Switch repackaging framework to Files-Excluded method.
+  * Drop unneeded get-orig-source target from debian/rules.
+  * Remove Jay Bonci from Uploaders. Thanks for your work!
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Xavier Guimard ]
+  * Declare compliance with policy 4.2.0
+  * Bump debhelper compat to 10
+  * Add upstream/metadata
+  * Enable hardening
+  * Add spelling-errors.patch (reported)
+  * Fix format in debian/copyright
+  * Enable autopkgtest:
+    - skip t/files.t test
+
+  [ gregor herrmann ]
+  * Declare compliance with Debian Policy 4.2.1.
+
+ -- Xavier Guimard <x.guimard@free.fr>  Sun, 26 Aug 2018 08:57:43 +0200
+
+libdigest-md4-perl (1.9+dfsg-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * Email change: Ansgar Burchardt -> ansgar@debian.org
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Update debian/repack.stub.
+
+  [ Xavier Guimard ]
+  * Imported Upstream version 1.9+dfsg
+  * Replace .dfsg by +dfsg as recommended by lintian
+  * Refresh test-rfc.patch (format and offsets)
+  * Bump Standards-Version to 3.9.4
+  * Bump debhelper compatibility to 9
+  * debian/copyright:
+    + Bump debian/copyright format to 1.0
+    + Add debian/repack.stub license
+    + Add comment on RSA license compatibility
+
+ -- Xavier Guimard <x.guimard@free.fr>  Sun, 12 May 2013 13:37:45 +0200
+
+libdigest-md4-perl (1.5.dfsg-2) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza).
+  * Set Maintainer to Debian Perl Group.
+  * Use dist-based URL in debian/watch.
+  * Add debian/repack.sh to automate the deletion of rfc1320.txt; call it
+    from debian/watch; switch from dversionmangle to uversionmangle in
+    debian/watch to get the right name for the .orig.tar.gz; add
+    debian/README.source; add get-orig-source target to debian/rules.
+  * Split out the changes in the test file into a patch.
+  * debian/control: Added: ${misc:Depends} to Depends: field.
+
+  [ Ansgar Burchardt ]
+  * Use debhelper 7.
+  * Use source format 3.0 (quilt).
+  * debian/watch: Use extended regular expresstion to patch upstream releases.
+  * Convert debian/copyright to proposed machine-readable format.
+  * Bump Standards-Version to 3.8.4.
+  * Add myself to Uploaders.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Sun, 06 Jun 2010 20:33:54 +0900
+
+libdigest-md4-perl (1.5.dfsg-1.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * ooops, also remove the rfc from the package so that it doesn't shows up in
+    the diff either :]
+
+ -- Pierre Habouzit <madcoder@debian.org>  Sat, 21 Jul 2007 15:18:41 +0200
+
+libdigest-md4-perl (1.5.dfsg-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Prune rfc1320.txt from the source tarball (Closes: 393385).
+  * Bump Standards-Version to 3.7.2.
+
+ -- Pierre Habouzit <madcoder@debian.org>  Sat, 21 Jul 2007 15:08:47 +0200
+
+libdigest-md4-perl (1.5-1) unstable; urgency=low
+
+  * New upstream release
+  * New maintainer (Closes: #266464)
+  * Changed section to perl
+  * Bumped debhelper dependancy to 4.1
+  * Adds debian/compat file per debhelper best practices
+  * Merged over to my standard rules template
+  * Removed debian/examples file as there are no more examples in the dist
+
+ -- Jay Bonci <jaybonci@debian.org>  Tue, 12 Jul 2005 22:50:20 -0400
+
+libdigest-md4-perl (1.1-3) unstable; urgency=low
+
+  * QA Group upload orphaning this package
+
+ -- Andrew Pollock <apollock@debian.org>  Sun,  7 Nov 2004 00:53:54 +1100
+
+libdigest-md4-perl (1.1-2) unstable; urgency=low
+
+  * thanks for the NMU
+  * debian/copyright: references appropriate licenses in
+    /usr/share/common-licenses (closes: Bug#157573)
+
+ -- Luca Filipozzi <lfilipoz@debian.org>  Sat, 21 Sep 2002 13:44:02 -0700
+
+libdigest-md4-perl (1.1-1.1) unstable; urgency=low
+
+  * NMU: Rebuilt against perl 5.8.
+
+ -- Ben Burton <benb@acm.org>  Sat, 31 Aug 2002 12:26:41 +1000
+
+libdigest-md4-perl (1.1-1) unstable; urgency=low
+
+  * Initial release.  (closes: Bug#140947)
+
+ -- Luca Filipozzi <lfilipoz@debian.org>  Mon, 15 Apr 2002 11:36:11 -0700

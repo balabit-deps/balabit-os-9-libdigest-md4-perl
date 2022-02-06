@@ -1,0 +1,24 @@
+Source: libdigest-md4-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ansgar Burchardt <ansgar@debian.org>,
+           Xavier Guimard <x.guimard@free.fr>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               perl
+Standards-Version: 4.2.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libdigest-md4-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libdigest-md4-perl.git
+Homepage: https://metacpan.org/release/Digest-MD4
+
+Package: libdigest-md4-perl
+Architecture: any
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Description: MD4 Message Digest for Perl
+ The Digest::MD4 module allows you to use the RSA Data Security Inc. MD4
+ Message Digest algorithm from within Perl programs.  The algorithm takes
+ as imput a message of arbitrary length and produces a 128-bit "fingerprint"
+ or "message digest" of the input.  MD4 is described in  RFC 1320.

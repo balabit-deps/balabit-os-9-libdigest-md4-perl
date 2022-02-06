@@ -1,0 +1,59 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Digest-MD4
+Source: https://metacpan.org/release/Digest-MD4
+Upstream-Contact: Mike McCauley <mikem@airspayce.com>
+Files-Excluded: rfc1320.txt
+
+Files: *
+Copyright: 1991-1992, RSA Data Security, Inc.
+ 1995-1996, Neil Winton
+ 1998-2003, Gisle Aas
+ 1990, RSA Data Security
+License: Artistic or GPL-1+
+Comment: RSA licence applies to MD4.* files. MD4.pm says:
+ This copyright does not prohibit distribution of any version of Perl
+ containing this extension under the terms of the GNU or Artistic
+ licenses.
+ .
+                            RSA-License
+ License to copy and use this software is granted provided that it
+ is identified as the "RSA Data Security, Inc. MD4 Message-Digest
+ Algorithm" in all material mentioning or referencing this software
+ or this function.
+ .
+ License is also granted to make and use derivative works provided
+ that such works are identified as "derived from the RSA Data
+ Security, Inc. MD4 Message-Digest Algorithm" in all material
+ mentioning or referencing the derived work.
+ .
+ RSA Data Security, Inc. makes no representations concerning either
+ the merchantability of this software or the suitability of this
+ software for any particular purpose. It is provided "as is"
+ without express or implied warranty of any kind.
+ .
+ These notices must be retained in any copies of any part of this
+ documentation and/or software.
+
+Files: debian/*
+Copyright: 2002, Luca Filipozzi <lfilipoz@debian.org>
+ 2005, Jay Bonci <jaybonci@debian.org>
+ 2007, Pierre Habouzit <madcoder@debian.org>
+ 2010, Ansgar Burchardt <ansgar@debian.org>
+ 2013-2018, Xavier Guimard <x.guimard@free.fr>
+License: Artistic or GPL-1+
+
+License: Artistic
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the Artistic License, which comes with Perl.
+ .
+ On Debian systems, the complete text of the Artistic License can be
+ found in `/usr/share/common-licenses/Artistic'.
+
+License: GPL-1+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 1, or (at your option)
+ any later version.
+ .
+ On Debian systems, the complete text of version 1 of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-1'.

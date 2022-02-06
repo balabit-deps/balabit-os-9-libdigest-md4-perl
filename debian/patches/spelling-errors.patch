@@ -1,0 +1,50 @@
+Description: spelling errors
+Author: Xavier Guimard <x.guimard@free.fr>
+Forwarded: https://rt.cpan.org/Ticket/Display.html?id=126950
+Last-Update: 2018-08-26
+
+--- a/MD4.pm
++++ b/MD4.pm
+@@ -207,7 +207,7 @@
+ read-once operation. Once it has been performed, the C<Digest::MD4>
+ object is automatically C<reset> and can be used to calculate another
+ digest value.  Call $md4->clone->digest if you want to calculate the
+-digest without reseting the digest state.
++digest without resetting the digest state.
+ 
+ =item $md4->hexdigest
+ 
+--- a/MD4.xs
++++ b/MD4.xs
+@@ -437,7 +437,7 @@
+ 	len = 22;
+ 	break;
+     default:
+-	croak("Bad convertion type (%d)", type);
++	croak("Bad conversion type (%d)", type);
+ 	break;
+     }
+     return sv_2mortal(newSVpv(ret,len));
+--- a/t/files.t
++++ b/t/files.t
+@@ -32,16 +32,16 @@
+     $EXPECT = <<EOT;
+ 1848e8b9f8982557b7358944c320908b  Changes
+ a64a8e41ca2fe973ffbb46aa66d70bd2  README
+-8f1d87025a08f7b1bdb968858d6c4044  MD4.pm
+-6ef61bd88dfbb1f1401c2d8f3612d5fd  MD4.xs
++c968c1f6fa8f1548183756f6f369419d  MD4.pm
++7f6293470f1bf6eda97a2bcee9a3f429  MD4.xs
+ EOT
+ } else {
+     # This is the output of: 'md4sum Changes README MD4.pm MD4.xs rfc1320.txt'
+     $EXPECT = <<EOT;
+ 1848e8b9f8982557b7358944c320908b  Changes
+ a64a8e41ca2fe973ffbb46aa66d70bd2  README
+-8f1d87025a08f7b1bdb968858d6c4044  MD4.pm
+-6ef61bd88dfbb1f1401c2d8f3612d5fd  MD4.xs
++c968c1f6fa8f1548183756f6f369419d  MD4.pm
++7f6293470f1bf6eda97a2bcee9a3f429  MD4.xs
+ EOT
+ }
+ 
